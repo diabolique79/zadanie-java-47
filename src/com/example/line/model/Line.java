@@ -1,3 +1,5 @@
+package com.example.line.model;
+
 import static java.lang.Math.*;
 
 public class Line {
@@ -6,7 +8,7 @@ public class Line {
     private Point pointB;
 
 
-Line(Point pointA, Point pointB){
+public Line(Point pointA, Point pointB){
 
     this.pointA = pointA;
     this.pointB = pointB;

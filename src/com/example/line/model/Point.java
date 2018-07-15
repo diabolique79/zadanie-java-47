@@ -1,15 +1,18 @@
+package com.example.line.model;
+
 public class Point {
 
     private double coordinateX;
     private double coordinateY;
 
 
-    Point(double coordinateX,double coordinateY){
+    public Point(double coordinateX,double coordinateY){
 
         this.coordinateX = coordinateX;
         this.coordinateY = coordinateY;
 
     }
+
 
     public double getCoordinateY() {
         return coordinateY;

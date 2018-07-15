@@ -1,9 +1,11 @@
+package com.example.line.model;
+
 public class CompareLines {
 
     private Line line1;
     private Line line2;
 
-    CompareLines(Line line1, Line line2) {
+    public CompareLines(Line line1, Line line2) {
 
         this.line1 = line1;
         this.line2 = line2;

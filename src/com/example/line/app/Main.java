@@ -1,5 +1,8 @@
+package com.example.line.app;
+
 import java.util.Locale;
 import java.util.Scanner;
+import com.example.line.model.*;
 
 public class Main {
 
