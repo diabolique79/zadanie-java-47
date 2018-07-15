@@ -17,12 +17,12 @@ public class Main {
         double coordinateYA = scanner.nextDouble();
 
         System.out.print("Wprowadź współrzędne drugiego punktu B. X = ");
-        double coordunateXB = scanner.nextDouble();
+        double coordinateXB = scanner.nextDouble();
         System.out.print("Y = ");
         double coordinateYB = scanner.nextDouble();
 
         Point point = new Point(coordinateXA, coordinateYA);
-        Point point1 = new Point(coordunateXB, coordinateYB);
+        Point point1 = new Point(coordinateXB, coordinateYB);
 
         Line line = new Line(point, point1);
         System.out.printf("Długość pierwszego odcinka AB wynosi: %.2f \n", line.getLength());
@@ -40,8 +40,10 @@ public class Main {
         Line line1 = new Line(point2, point3);
         System.out.printf("Długość odcinka CD wynosi: %.2f \n", line1.getLength());
 
-        CompareLines compareLines = new CompareLines(line, line1);
-        compareLines.compareLine();
+        CompareLines compareLines = new CompareLines();
+        compareLines.compareLine(line, line1);
+        Line longer = compareLines.compareLine(line, line1);
+        System.out.printf("Dłuższy odcinek wynosi: %.2f", longer.getLength());
 
 
     }

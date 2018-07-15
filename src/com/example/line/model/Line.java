@@ -21,4 +21,8 @@ public Line(Point pointA, Point pointB){
         double wynik2 = pow(pointA.getCoordinateY() - pointB.getCoordinateY(), 2.0);
         return abs((sqrt(wynik1 + wynik2)));
     }
-}
+
+
+
+    }
+
